@@ -1,0 +1,36 @@
+.header-text {
+  text-align: center;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-text p {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0 35px;
+}
+
+.header-text-1,
+.header-text-1 p {
+  width: 408px;
+  height: 182px;
+}
+
+.header-text-2,
+.header-text-2 p {
+  width: 399px;
+  height: 175px;
+}
+
+.header-text-3,
+.header-text-3 p {
+  width: 399px;
+  height: 175px;
+  position: absolute;
+}
+
+.header-text-3 {
+  margin: 45px 55px;
+}

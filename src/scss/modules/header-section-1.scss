@@ -1,0 +1,30 @@
+.header-section-1 {
+  min-width: 1280px;
+  margin: 20px 10vh 40px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-section-1 .container-1 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header-section-1 .container-1 img:first-child {
+  height: 40vh;
+}
+
+.header-section-1 .container-2 div + img {
+  height: 50vh;
+}
+
+.header-section-1 .container-2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-section-1 .header-text {
+  margin: 64px 28px;
+}
