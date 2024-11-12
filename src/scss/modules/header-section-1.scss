@@ -1,9 +1,11 @@
 .header-section-1 {
-  min-width: 1280px;
-  margin: 20px 10vh 40px 16px;
+  min-width: 1300px;
+  padding: 20px 10vh 40px 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-image: url(../img/background-wall.jpg);
+  background-size: cover;
 }
 
 .header-section-1 .container-1 {
@@ -13,10 +15,12 @@
 
 .header-section-1 .container-1 img:first-child {
   height: 40vh;
+  max-height: 450px;
 }
 
 .header-section-1 .container-2 div + img {
   height: 50vh;
+  max-height: 500px;
 }
 
 .header-section-1 .container-2 {
