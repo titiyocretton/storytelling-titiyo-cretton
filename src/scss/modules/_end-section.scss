@@ -1,0 +1,56 @@
+.end-climax {
+  height: 100vh;
+  width: 50%;
+  background-image: url(../img/background-isa-sword.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.end-section {
+  display: flex;
+  width: 200vw;
+  // .active {
+  transform: translateX(-50%);
+  // }
+}
+
+.end-shop {
+  background: black;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.end-footer-container {
+  display: flex;
+  padding-top: 90px;
+  img {
+    width: 129px;
+  }
+  .cta {
+    margin-top: 20px;
+    flex-grow: 1;
+  }
+}
+
+.end-shop-logo-furieuse {
+  width: 400px;
+}
+
+.end-book {
+  height: 561px;
+  img {
+    height: 100%;
+  }
+}
+
+.end-shop-info {
+  padding: 95px 0 0 75px;
+  p {
+    padding-top: 40px;
+  }
+}
