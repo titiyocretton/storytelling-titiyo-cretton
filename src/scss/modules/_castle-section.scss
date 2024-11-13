@@ -1,17 +1,46 @@
-.castle-section img {
-  width: 100%;
+.castle-section {
+  width: 100vw;
 }
 
 .castle-info-cumbe {
   margin-top: 70px;
 }
 
+.castle-background {
+  background-image: url(../img/background-castle.jpg);
+  width: 100%;
+  height: 180vh;
+  background-position: bottom;
+  background-size: cover;
+}
+
 .castle-middleground {
   position: absolute;
-  top: 4100px;
+  width: 100%;
+  z-index: 5;
+  // top: -140vh;
+  margin-top: 500px;
+}
+
+.castle-middleground img {
+  width: 100%;
 }
 
 .castle-foreground {
-  position: absolute;
-  top: 4600px;
+  background-image: url(../img/foreground-castle.png);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
 }
+
+.castle-foreground-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  width: 100%;
+  height: 180vh;
+  z-index: 10;
+}
+
+// transform: translatey(-1300px);

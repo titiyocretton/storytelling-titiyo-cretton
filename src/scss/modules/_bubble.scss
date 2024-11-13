@@ -50,7 +50,9 @@
 
 .bubble-fracture {
   z-index: 15;
-  position: absolute;
+  position: relative;
+  height: 0;
+  top: -200px;
 }
 
 .bubble-fracture p {
