@@ -1,31 +1,10 @@
-// .pillar-container {
-//   position: absolute;
-//   width: 280px;
-//   z-index: 1;
-//   height: 100vh;
-//   width: 200vh;
-//   margin-left: 1200px;
-//   overflow: hidden;
-//   display: flex;
-//   align-items: flex-start;
-//   justify-content: space-between;
-// }
-
-// .pillar {
-//   width: 320px;
-// }
-
-// width: 1600px;
-
-.pillar {
+.pillar img {
   width: 280px;
 }
 
-.pillar-contain {
+.pillar {
   z-index: 10;
   height: 100%;
-  // width: 300px;
-  background: red;
   transform: translateX(-50%);
   position: absolute;
   overflow: hidden;
