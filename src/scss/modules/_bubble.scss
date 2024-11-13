@@ -1,4 +1,59 @@
-.bubble-text-fracture p {
+.bubble-header,
+.bubble {
+  text-align: center;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.bubble-header p,
+.bubble p {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0 35px;
+}
+
+.header-text-1,
+.header-text-1 p {
+  width: 408px;
+  height: 182px;
+}
+
+.header-text-2,
+.header-text-2 p {
+  width: 399px;
+  height: 175px;
+}
+
+.header-text-3,
+.header-text-3 p {
+  width: 399px;
+  height: 175px;
+  position: absolute;
+}
+
+.header-text-3 {
+  margin: 45px 120px;
+}
+
+.header-text-4,
+.header-text-4 p {
+  width: 399px;
+  height: 209px;
+  position: absolute;
+}
+
+.header-text-4 {
+  margin: 30px 150px;
+}
+
+.bubble-fracture {
+  z-index: 15;
+  position: absolute;
+}
+
+.bubble-fracture p {
   position: absolute;
   text-align: center;
   font-size: 48px;
@@ -7,6 +62,11 @@
   align-items: center;
 }
 
-.bubble-text-fracture img {
+.bubble-fracture img {
   width: 100vw;
+}
+
+.bubble p {
+  width: 400px;
+  margin-top: 70px;
 }
