@@ -14,6 +14,20 @@
   top: 140px;
 }
 
-.sister-section img {
-  width: 100vw;
+.sister-background img {
+  width: 100%;
+  transform: scale(68%);
+  position: relative;
+  right: -470px;
+  top: 80px;
+}
+
+.sister-background {
+  background-image: url(../img/king-sword.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
