@@ -1,0 +1,20 @@
+.stop-section {
+  position: absolute;
+  height: 0;
+  width: 0;
+  z-index: 50;
+
+  .stop-bubble {
+    width: 2100px;
+  }
+  .stop-character {
+    width: 386px;
+    height: 763px;
+    top: -650px;
+    left: 1400px;
+  }
+  img,
+  p {
+    position: absolute;
+  }
+}
