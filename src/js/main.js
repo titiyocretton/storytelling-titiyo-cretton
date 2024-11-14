@@ -159,6 +159,7 @@ shopShort.addEventListener("click", function () {
 });
 
 goStart.addEventListener("click", function () {
-  shopShort.classList.add("hide");
-  goStart.classList.remove("hide");
+  shopShort.classList.remove("hide");
+  goStart.classList.add("hide");
+  goShop.classList.remove("active");
 });
