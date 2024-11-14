@@ -37,18 +37,26 @@ gsap.to(".stop-move", {
 
 // animation de l'épée qui tombe
 
-gsap.to(".sister-sword", {
-  scrollTrigger: {
-    trigger: ".sister-sword",
-    start: "100px center",
-    end: "101px center",
-    scrub: 0.1,
-  },
-  width: "100%",
-  scale: 0.3,
-  right: -280,
-  top: "118vh",
-});
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".sister-sword",
+      start: "3300px center",
+      end: "3301px center",
+      scrub: 0.1,
+      markers: true,
+    },
+  })
+  .to(".sister-sword", {
+    scale: 1,
+    right: -280,
+    top: "118vh",
+  })
+  .to(".sister-sword", {
+    scale: 0.3,
+  });
+
+// parallax des piliers
 
 gsap
   .timeline({
@@ -75,6 +83,8 @@ gsap
     x: -250,
   });
 
+// parallax de la section castle
+
 gsap
   .timeline({
     scrollTrigger: {
@@ -83,7 +93,6 @@ gsap
       end: "4000px bottom",
       scrub: 0.3,
       pin: true,
-      markers: true,
     },
   })
   .to(
