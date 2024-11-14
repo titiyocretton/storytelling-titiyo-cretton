@@ -10,9 +10,9 @@
   display: flex;
   width: 200vw;
   transition: 0.5s;
-  // .active {
-  transform: translateX(-50%);
-  // }
+  .active {
+    transform: translateX(-50%);
+  }
 }
 
 .end-shop {

@@ -24,12 +24,93 @@ gsap.to(".horizontal-scroll", {
   },
 });
 
+// animation de Isa qui dit Stop
+
 gsap.to(".stop-move", {
   scrollTrigger: {
     trigger: ".stop-move",
     start: "2500px center",
-    markers: true,
     scrub: true,
   },
   left: 0,
 });
+
+// animation de l'épée qui tombe
+
+gsap.to(".sister-sword", {
+  scrollTrigger: {
+    trigger: ".sister-sword",
+    start: "100px center",
+    end: "101px center",
+    scrub: 0.1,
+  },
+  width: "100%",
+  scale: 0.3,
+  right: -280,
+  top: "118vh",
+});
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".header-section-2",
+      start: "top top",
+      scrub: 1,
+    },
+  })
+  .to(".pillar-section-2", {
+    x: -250,
+  });
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".header-section-3",
+      start: "1200px top",
+      end: "2000px top",
+      scrub: 1,
+    },
+  })
+  .to(".pillar-section-3", {
+    x: -250,
+  });
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".castle-section",
+      start: "top top",
+      end: "4000px bottom",
+      scrub: 0.3,
+      pin: true,
+      markers: true,
+    },
+  })
+  .to(
+    ".castle-background",
+    {
+      y: -800,
+    },
+    0
+  )
+  .to(
+    ".castle-middleground",
+    {
+      y: "-300vh",
+    },
+    0
+  )
+  .to(
+    ".castle-foreground",
+    {
+      y: "-160vh",
+    },
+    0
+  )
+  .to(
+    ".bubble-fracture",
+    {
+      y: "-180vh",
+    },
+    0
+  );
