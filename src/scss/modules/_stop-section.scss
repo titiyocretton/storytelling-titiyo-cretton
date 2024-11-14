@@ -1,20 +1,39 @@
 .stop-section {
-  position: absolute;
+  position: relative;
   height: 0;
   width: 0;
   z-index: 50;
+  left: 1096px;
+  div {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
 
   .stop-bubble {
-    width: 2100px;
+    width: 2000px;
+    left: -300px;
   }
   .stop-character {
     width: 386px;
-    height: 763px;
-    top: -650px;
-    left: 1400px;
+    top: 200px;
+    left: 1050px;
   }
   img,
   p {
     position: absolute;
   }
+  p {
+    z-index: 200;
+    left: 370px;
+    font-size: 217px;
+    width: 800px;
+    margin-top: 230px;
+  }
+}
+
+.stop-move {
+  position: relative;
+  left: 1450px;
+  transition: 0.2s;
 }

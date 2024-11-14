@@ -23,3 +23,13 @@ gsap.to(".horizontal-scroll", {
     anticipatePin: 1,
   },
 });
+
+gsap.to(".stop-move", {
+  scrollTrigger: {
+    trigger: ".stop-move",
+    start: "2500px center",
+    markers: true,
+    scrub: true,
+  },
+  left: 0,
+});
