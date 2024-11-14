@@ -44,7 +44,7 @@ gsap
       start: "3300px center",
       end: "3301px center",
       scrub: 0.1,
-      markers: true,
+      // markers: true,
     },
   })
   .to(".sister-sword", {
@@ -76,6 +76,7 @@ gsap
       trigger: ".header-section-3",
       start: "1200px top",
       end: "2000px top",
+      // markers: true,
       scrub: 1,
     },
   })
@@ -123,3 +124,41 @@ gsap
     },
     0
   );
+
+// animation de la bulle de l'épée qui va en haut et en bas
+
+gsap
+  .timeline()
+  .to(".bubble-climax", {
+    y: 0,
+    repeat: -1,
+    yoyo: true,
+  })
+  .to(".bubble-climax", {
+    y: -15,
+    repeat: -1,
+    yoyo: true,
+  });
+
+const swordCta = document.querySelector(".bubble-climax");
+const goShop = document.querySelector(".end-section");
+
+swordCta.addEventListener("click", function () {
+  goShop.classList.add("active");
+  shopShort.classList.add("hide");
+  goStart.classList.remove("hide");
+});
+
+const shopShort = document.querySelector(".cta-shop");
+const goStart = document.querySelector(".cta-start");
+
+shopShort.addEventListener("click", function () {
+  goShop.classList.add("active");
+  goStart.classList.toggle("hide");
+  shopShort.classList.toggle("hide");
+});
+
+goStart.addEventListener("click", function () {
+  shopShort.classList.add("hide");
+  goStart.classList.remove("hide");
+});

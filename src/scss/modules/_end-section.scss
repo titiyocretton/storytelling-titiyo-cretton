@@ -10,9 +10,6 @@
   display: flex;
   width: 200vw;
   transition: 0.5s;
-  .active {
-    transform: translateX(-50%);
-  }
 }
 
 .end-shop {
@@ -85,4 +82,8 @@
     font-family: "akshar", sans-serif;
     font-weight: 400;
   }
+}
+
+.end-section.active {
+  transform: translateX(-50%);
 }

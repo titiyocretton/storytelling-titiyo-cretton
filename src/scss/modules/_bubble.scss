@@ -79,3 +79,19 @@
 .header-section-1 .bubble-header {
   margin: 64px 28px;
 }
+
+.bubble-climax {
+  top: 500px;
+  left: 860px;
+  position: relative;
+  p {
+    position: absolute;
+    font-size: 24px;
+    width: 292px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  img {
+    width: 292px;
+  }
+}
