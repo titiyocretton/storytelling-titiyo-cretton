@@ -4,6 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// code pour le scroll horizontal de la première partie du site
+
 gsap.to(".horizontal-scroll", {
   x: () =>
     -(
@@ -44,7 +46,6 @@ gsap
       start: "3300px center",
       end: "3301px center",
       scrub: 0.1,
-      // markers: true,
     },
   })
   .to(".sister-sword", {
@@ -76,7 +77,6 @@ gsap
       trigger: ".header-section-3",
       start: "1200px top",
       end: "2000px top",
-      // markers: true,
       scrub: 1,
     },
   })
@@ -140,7 +140,11 @@ gsap
     yoyo: true,
   });
 
+// fonction pour pouvoir clicker sur l'épée ou la bulle de l'épée pour acceder
+// à la boutique
+
 const swordCta = document.querySelector(".bubble-climax");
+const swordCta2 = document.querySelector(".cta-sword");
 const goShop = document.querySelector(".end-section");
 
 swordCta.addEventListener("click", function () {
@@ -148,6 +152,16 @@ swordCta.addEventListener("click", function () {
   shopShort.classList.add("hide");
   goStart.classList.remove("hide");
 });
+
+swordCta2.addEventListener("click", function () {
+  goShop.classList.add("active");
+  shopShort.classList.add("hide");
+  goStart.classList.remove("hide");
+});
+
+// bouton de racourci vers le shop ou le début du site. le but est que le go
+// start ne soit affiché que quand on est a la boutique et que le go boutique
+// seulement quand on es pas à la boutique
 
 const shopShort = document.querySelector(".cta-shop");
 const goStart = document.querySelector(".cta-start");
@@ -162,4 +176,37 @@ goStart.addEventListener("click", function () {
   shopShort.classList.remove("hide");
   goStart.classList.add("hide");
   goShop.classList.remove("active");
+});
+
+// animation de la personne dans le tonneau
+
+const ctaBarrel = document.querySelector(".cta-barrel");
+
+// gsap
+//   .timeline()
+//   .to(".barrel-head", {
+//     y: 0,
+//     yoyo: true,
+//     repeat: -1,
+//     duration: 4,
+//   })
+//   .to(".barrel-head", {
+//     y: -55,
+//     yoyo: true,
+//     repeat: -1,
+//     duration: 4,
+//   });
+
+ctaBarrel.addEventListener("mouseenter", function () {
+  gsap.to(".barrel-head", {
+    y: -55,
+    duration: 0.5,
+  });
+});
+
+ctaBarrel.addEventListener("mouseleave", function () {
+  gsap.to(".barrel-head", {
+    y: 0,
+    duration: 2,
+  });
 });
