@@ -4,7 +4,7 @@
 
 .castle-section {
   width: 100vw;
-  height: 100vh;
+  height: 800px;
 }
 
 .castle-info-cumbe {
@@ -14,7 +14,7 @@
 .castle-background {
   background-image: url(../img/background-castle.jpg);
   width: 100%;
-  height: 200vh;
+  height: 2000px;
   background-position: bottom;
   background-size: cover;
   position: absolute;
@@ -28,12 +28,16 @@
   margin-top: 1000px;
 }
 
+.castle-bubble-king {
+  transform: translatey(-100px);
+}
+
 .castle-bubble-cumbe {
   margin-top: 485px;
 }
 
 .castle-img-cumbe {
-  margin-top: 400px;
+  margin-top: 200px;
 }
 
 .castle-middleground {
@@ -44,7 +48,7 @@
 
 .castle-foreground {
   background-image: url(../img/foreground-castle.png);
-  height: 80vh;
+  height: 85vh;
   background-size: cover;
   background-position: center;
 }
@@ -55,6 +59,6 @@
   justify-content: flex-end;
   position: absolute;
   width: 100%;
-  height: 260vh;
+  height: 800px;
   z-index: 10;
 }

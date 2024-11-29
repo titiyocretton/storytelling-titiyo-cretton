@@ -101,21 +101,21 @@ gsap
   .to(
     ".castle-background",
     {
-      y: -800,
+      y: "-1220px",
     },
     0
   )
   .to(
     ".castle-middleground",
     {
-      y: "-300vh",
+      y: "-400vh",
     },
     0
   )
-  .to(
+  .from(
     ".castle-foreground",
     {
-      y: "-160vh",
+      y: "100vh",
     },
     0
   )
@@ -123,6 +123,20 @@ gsap
     ".bubble-fracture",
     {
       y: "-180vh",
+    },
+    0
+  )
+  .to(
+    ".castle-bubble-king",
+    {
+      y: 700,
+    },
+    0
+  )
+  .to(
+    ".castle-img-cumbe",
+    {
+      marginTop: 400,
     },
     0
   );
