@@ -17,5 +17,5 @@
 
 .barrel-active {
   transform: translateY(-55px);
-  transition: 0.5s;
+  transition: 0.5s; // redéfinir la transision permet de faire une transition différente entre le "mouse enter" et le "mouse leave"
 }
