@@ -10,3 +10,12 @@
     position: absolute;
   }
 }
+
+.barrel-head {
+  transition: 2s;
+}
+
+.barrel-active {
+  transform: translateY(-55px);
+  transition: 0.5s;
+}

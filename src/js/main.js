@@ -31,7 +31,7 @@ gsap.to(".horizontal-scroll", {
 gsap.to(".stop-move", {
   scrollTrigger: {
     trigger: ".stop-move",
-    start: "2500px center",
+    start: "2500px center", // effectue l'animation quand le centre de la hauteur se retrouve à 2500px du haut de la page
     scrub: true,
   },
   left: 0,
@@ -58,12 +58,14 @@ gsap
   });
 
 // parallax des piliers
+// j'ai animé les deux pilier séparément parce que j'avais des probleme pour le
+// déclenchement et la fin de l'animation. je pense que y'avais une solution plus courte mais je l'ai pas trouvée
 
 gsap
   .timeline({
     scrollTrigger: {
       trigger: ".header-section-2",
-      start: "top top",
+      start: "top top", // l'animation débute tout de suite
       scrub: 1,
     },
   })
@@ -75,7 +77,7 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: ".header-section-3",
-      start: "1200px top",
+      start: "1200px top", // l'animation est décalée et se fera plus loin
       end: "2000px top",
       scrub: 1,
     },
@@ -85,14 +87,14 @@ gsap
   });
 
 // parallax de la section castle
-
+// le vh n'est pas idéale pour le redimension de la page mais mieux que les px
 gsap
   .timeline({
     scrollTrigger: {
       trigger: ".castle-section",
       start: "top top",
       end: "4000px bottom",
-      scrub: 0.3,
+      scrub: 0.3, //le chiffre donne un effet plus lisse à l'animation
       pin: true,
     },
   })
@@ -147,6 +149,8 @@ const swordCta = document.querySelector(".bubble-climax");
 const swordCta2 = document.querySelector(".cta-sword");
 const goShop = document.querySelector(".end-section");
 
+//répétition de la fonction, c'est pas l'idéal mais j'ai oublié comment l'appeler
+
 swordCta.addEventListener("click", function () {
   goShop.classList.add("active");
   shopShort.classList.add("hide");
@@ -178,35 +182,15 @@ goStart.addEventListener("click", function () {
   goShop.classList.remove("active");
 });
 
-// animation de la personne dans le tonneau
+// animation de la personne dans le tonneaux
 
 const ctaBarrel = document.querySelector(".cta-barrel");
-
-// gsap
-//   .timeline()
-//   .to(".barrel-head", {
-//     y: 0,
-//     yoyo: true,
-//     repeat: -1,
-//     duration: 4,
-//   })
-//   .to(".barrel-head", {
-//     y: -55,
-//     yoyo: true,
-//     repeat: -1,
-//     duration: 4,
-//   });
+const headBarrel = document.querySelector(".barrel-head");
 
 ctaBarrel.addEventListener("mouseenter", function () {
-  gsap.to(".barrel-head", {
-    y: -55,
-    duration: 0.5,
-  });
+  headBarrel.classList.add("barrel-active");
 });
 
 ctaBarrel.addEventListener("mouseleave", function () {
-  gsap.to(".barrel-head", {
-    y: 0,
-    duration: 2,
-  });
+  headBarrel.classList.remove("barrel-active");
 });
