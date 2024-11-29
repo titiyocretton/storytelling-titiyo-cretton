@@ -6,6 +6,7 @@
   background-position: bottom;
 }
 
+//container des deux dernière sections pour placer le shop à droite
 .end-section {
   display: flex;
   width: 200vw;
@@ -43,7 +44,7 @@
 .end-book {
   height: 561px;
   img {
-    height: 100%;
+    height: 100%; // les % pour qu'ils supporte mieux les changement de dimensions
   }
 }
 
@@ -57,6 +58,12 @@
 .end-container-logo svg {
   width: 15px;
   height: 20px;
+}
+
+.end-container-logo svg:hover {
+  path {
+    fill: #ffffffa1;
+  }
 }
 
 .end-container-logo {
@@ -82,8 +89,13 @@
     font-family: "akshar", sans-serif;
     font-weight: 400;
   }
+  a:hover {
+    color: #ffffffa1;
+    text-decoration: none;
+  }
 }
 
+// déplacement de la section fin de gauche à droite
 .end-section.active {
   transform: translateX(-50%);
 }
